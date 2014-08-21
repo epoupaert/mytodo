@@ -17,6 +17,9 @@
   <!-- Todos list -->
   <div ui-sortable ng-model="todos">
     <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+      <span class="input-group-addon">
+        <input type="checkbox">
+      </span>
       <span class="form-control">{{todo}}</span>
       <span class="input-group-btn">
         <button class="btn btn-primary" ng-click="editTodo($index)" aria-label="Edit">
